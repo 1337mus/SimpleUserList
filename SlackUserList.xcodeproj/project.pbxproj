@@ -7,23 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DBB2201E1F2A60680006C875 /* MemberListLazyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB2201D1F2A60680006C875 /* MemberListLazyLoader.swift */; };
+		DBB220201F2A61710006C875 /* CursorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB2201F1F2A61710006C875 /* CursorModel.swift */; };
+		DBB220251F2A9B420006C875 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB220241F2A9B420006C875 /* ProfileViewController.swift */; };
+		DBB220271F2AA4AF0006C875 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB220261F2AA4AF0006C875 /* ImageTableViewCell.swift */; };
+		DBB220291F2AA5BB0006C875 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB220281F2AA5BB0006C875 /* DetailsTableViewCell.swift */; };
+		DBB2202B1F2ACE090006C875 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB2202A1F2ACE090006C875 /* BaseNavigationController.swift */; };
 		DBF5140B1F298B87001DEFA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF5140A1F298B86001DEFA5 /* AppDelegate.swift */; };
-		DBF5140D1F298B87001DEFA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF5140C1F298B87001DEFA5 /* ViewController.swift */; };
+		DBF5140D1F298B87001DEFA5 /* MemberListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF5140C1F298B87001DEFA5 /* MemberListViewController.swift */; };
 		DBF514101F298B87001DEFA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF5140E1F298B87001DEFA5 /* Main.storyboard */; };
 		DBF514131F298B87001DEFA5 /* SlackUserList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBF514111F298B87001DEFA5 /* SlackUserList.xcdatamodeld */; };
 		DBF514151F298B87001DEFA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF514141F298B87001DEFA5 /* Assets.xcassets */; };
 		DBF514181F298B87001DEFA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF514161F298B87001DEFA5 /* LaunchScreen.storyboard */; };
+		DBF514241F29947A001DEFA5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF514231F29947A001DEFA5 /* Alamofire.framework */; };
+		DBF514261F299480001DEFA5 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF514251F299480001DEFA5 /* AlamofireImage.framework */; };
+		DBF5142A1F299AD4001DEFA5 /* ManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF514291F299AD4001DEFA5 /* ManagedObject.swift */; };
+		DBF5142C1F299C46001DEFA5 /* NSManagedObjectContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF5142B1F299C46001DEFA5 /* NSManagedObjectContext+Extension.swift */; };
+		DBF5142E1F29AB14001DEFA5 /* MOCSyncCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF5142D1F29AB14001DEFA5 /* MOCSyncCoordinator.swift */; };
+		DBF514321F29B530001DEFA5 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF514311F29B530001DEFA5 /* BaseService.swift */; };
+		DBF514341F29B789001DEFA5 /* UserListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF514331F29B789001DEFA5 /* UserListService.swift */; };
+		DBF514371F29B7D1001DEFA5 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF514361F29B7D1001DEFA5 /* Member.swift */; };
+		DBF514391F29B840001DEFA5 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF514381F29B840001DEFA5 /* Profile.swift */; };
+		DBF5143C1F29C079001DEFA5 /* MemberListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF5143B1F29C079001DEFA5 /* MemberListViewModel.swift */; };
+		DBF5143E1F29C1FE001DEFA5 /* FetchedResultsControllerObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF5143D1F29C1FE001DEFA5 /* FetchedResultsControllerObserver.swift */; };
+		DBF514401F29C321001DEFA5 /* MemberListCellDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF5143F1F29C321001DEFA5 /* MemberListCellDataSource.swift */; };
+		DBF514431F29C3B5001DEFA5 /* MemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF514421F29C3B5001DEFA5 /* MemberModel.swift */; };
+		DBF514451F29C482001DEFA5 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF514441F29C482001DEFA5 /* ProfileModel.swift */; };
+		DBF514471F29C608001DEFA5 /* KeyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF514461F29C608001DEFA5 /* KeyCodable.swift */; };
+		DBF514491F2A5D2C001DEFA5 /* NSFetchedResultsController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF514481F2A5D2C001DEFA5 /* NSFetchedResultsController+Extension.swift */; };
+		DBFE8A2B1F2D726600A7D5BF /* MemberListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFE8A2A1F2D726600A7D5BF /* MemberListTableViewCell.swift */; };
+		DBFE8A2E1F2D783F00A7D5BF /* UIView+Slack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFE8A2D1F2D783F00A7D5BF /* UIView+Slack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DBB2201D1F2A60680006C875 /* MemberListLazyLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberListLazyLoader.swift; sourceTree = "<group>"; };
+		DBB2201F1F2A61710006C875 /* CursorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CursorModel.swift; sourceTree = "<group>"; };
+		DBB220241F2A9B420006C875 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DBB220261F2AA4AF0006C875 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		DBB220281F2AA5BB0006C875 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
+		DBB2202A1F2ACE090006C875 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		DBF514071F298B86001DEFA5 /* SlackUserList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackUserList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF5140A1F298B86001DEFA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBF5140C1F298B87001DEFA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBF5140C1F298B87001DEFA5 /* MemberListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListViewController.swift; sourceTree = "<group>"; };
 		DBF5140F1F298B87001DEFA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBF514121F298B87001DEFA5 /* SlackUserList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SlackUserList.xcdatamodel; sourceTree = "<group>"; };
 		DBF514141F298B87001DEFA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBF514171F298B87001DEFA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBF514191F298B87001DEFA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBF514231F29947A001DEFA5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		DBF514251F299480001DEFA5 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = SOURCE_ROOT; };
+		DBF514291F299AD4001DEFA5 /* ManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObject.swift; sourceTree = "<group>"; };
+		DBF5142B1F299C46001DEFA5 /* NSManagedObjectContext+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extension.swift"; sourceTree = "<group>"; };
+		DBF5142D1F29AB14001DEFA5 /* MOCSyncCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOCSyncCoordinator.swift; sourceTree = "<group>"; };
+		DBF514311F29B530001DEFA5 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		DBF514331F29B789001DEFA5 /* UserListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListService.swift; sourceTree = "<group>"; };
+		DBF514361F29B7D1001DEFA5 /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		DBF514381F29B840001DEFA5 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		DBF5143B1F29C079001DEFA5 /* MemberListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberListViewModel.swift; sourceTree = "<group>"; };
+		DBF5143D1F29C1FE001DEFA5 /* FetchedResultsControllerObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsControllerObserver.swift; sourceTree = "<group>"; };
+		DBF5143F1F29C321001DEFA5 /* MemberListCellDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberListCellDataSource.swift; sourceTree = "<group>"; };
+		DBF514421F29C3B5001DEFA5 /* MemberModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberModel.swift; sourceTree = "<group>"; };
+		DBF514441F29C482001DEFA5 /* ProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		DBF514461F29C608001DEFA5 /* KeyCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyCodable.swift; sourceTree = "<group>"; };
+		DBF514481F2A5D2C001DEFA5 /* NSFetchedResultsController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSFetchedResultsController+Extension.swift"; sourceTree = "<group>"; };
+		DBFE8A2A1F2D726600A7D5BF /* MemberListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberListTableViewCell.swift; sourceTree = "<group>"; };
+		DBFE8A2D1F2D783F00A7D5BF /* UIView+Slack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Slack.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,15 +79,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBF514241F29947A001DEFA5 /* Alamofire.framework in Frameworks */,
+				DBF514261F299480001DEFA5 /* AlamofireImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DBB220221F2A9B140006C875 /* Member List */ = {
+			isa = PBXGroup;
+			children = (
+				DBF5143F1F29C321001DEFA5 /* MemberListCellDataSource.swift */,
+				DBF5140C1F298B87001DEFA5 /* MemberListViewController.swift */,
+				DBFE8A2A1F2D726600A7D5BF /* MemberListTableViewCell.swift */,
+				DBF5143B1F29C079001DEFA5 /* MemberListViewModel.swift */,
+				DBB2201D1F2A60680006C875 /* MemberListLazyLoader.swift */,
+			);
+			name = "Member List";
+			sourceTree = "<group>";
+		};
+		DBB220231F2A9B250006C875 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DBB220241F2A9B420006C875 /* ProfileViewController.swift */,
+				DBB220261F2AA4AF0006C875 /* ImageTableViewCell.swift */,
+				DBB220281F2AA5BB0006C875 /* DetailsTableViewCell.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
 		DBF513FE1F298B86001DEFA5 = {
 			isa = PBXGroup;
 			children = (
+				DBF514271F299489001DEFA5 /* Framework */,
 				DBF514091F298B86001DEFA5 /* SlackUserList */,
 				DBF514081F298B86001DEFA5 /* Products */,
 			);
@@ -56,15 +129,96 @@
 		DBF514091F298B86001DEFA5 /* SlackUserList */ = {
 			isa = PBXGroup;
 			children = (
-				DBF5140A1F298B86001DEFA5 /* AppDelegate.swift */,
-				DBF5140C1F298B87001DEFA5 /* ViewController.swift */,
-				DBF5140E1F298B87001DEFA5 /* Main.storyboard */,
+				DBFE8A2C1F2D782C00A7D5BF /* Extensions */,
+				DBF514351F29B7AC001DEFA5 /* Domain Models */,
+				DBF514301F29B521001DEFA5 /* Services */,
+				DBF514281F299ABA001DEFA5 /* Core Data */,
+				DBF5143A1F29C062001DEFA5 /* Application */,
 				DBF514141F298B87001DEFA5 /* Assets.xcassets */,
 				DBF514161F298B87001DEFA5 /* LaunchScreen.storyboard */,
 				DBF514191F298B87001DEFA5 /* Info.plist */,
-				DBF514111F298B87001DEFA5 /* SlackUserList.xcdatamodeld */,
 			);
 			path = SlackUserList;
+			sourceTree = "<group>";
+		};
+		DBF514271F299489001DEFA5 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				DBF514251F299480001DEFA5 /* AlamofireImage.framework */,
+				DBF514231F29947A001DEFA5 /* Alamofire.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		DBF514281F299ABA001DEFA5 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				DBF514411F29C3A8001DEFA5 /* Models */,
+				DBF514111F298B87001DEFA5 /* SlackUserList.xcdatamodeld */,
+				DBF5142F1F29AB77001DEFA5 /* Helpers */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		DBF5142F1F29AB77001DEFA5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DBF514291F299AD4001DEFA5 /* ManagedObject.swift */,
+				DBF5142B1F299C46001DEFA5 /* NSManagedObjectContext+Extension.swift */,
+				DBF5142D1F29AB14001DEFA5 /* MOCSyncCoordinator.swift */,
+				DBF5143D1F29C1FE001DEFA5 /* FetchedResultsControllerObserver.swift */,
+				DBF514461F29C608001DEFA5 /* KeyCodable.swift */,
+				DBF514481F2A5D2C001DEFA5 /* NSFetchedResultsController+Extension.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		DBF514301F29B521001DEFA5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DBF514311F29B530001DEFA5 /* BaseService.swift */,
+				DBF514331F29B789001DEFA5 /* UserListService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		DBF514351F29B7AC001DEFA5 /* Domain Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBF514361F29B7D1001DEFA5 /* Member.swift */,
+				DBF514381F29B840001DEFA5 /* Profile.swift */,
+			);
+			name = "Domain Models";
+			sourceTree = "<group>";
+		};
+		DBF5143A1F29C062001DEFA5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DBF5140A1F298B86001DEFA5 /* AppDelegate.swift */,
+				DBB2202A1F2ACE090006C875 /* BaseNavigationController.swift */,
+				DBB220221F2A9B140006C875 /* Member List */,
+				DBB220231F2A9B250006C875 /* Profile */,
+				DBF5140E1F298B87001DEFA5 /* Main.storyboard */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		DBF514411F29C3A8001DEFA5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBF514421F29C3B5001DEFA5 /* MemberModel.swift */,
+				DBF514441F29C482001DEFA5 /* ProfileModel.swift */,
+				DBB2201F1F2A61710006C875 /* CursorModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DBFE8A2C1F2D782C00A7D5BF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DBFE8A2D1F2D783F00A7D5BF /* UIView+Slack.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +231,7 @@
 				DBF514031F298B86001DEFA5 /* Sources */,
 				DBF514041F298B86001DEFA5 /* Frameworks */,
 				DBF514051F298B86001DEFA5 /* Resources */,
+				DBB220211F2A7AB40006C875 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -135,14 +290,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DBB220211F2A7AB40006C875 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DBF514031F298B86001DEFA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBF5140D1F298B87001DEFA5 /* ViewController.swift in Sources */,
+				DBB2202B1F2ACE090006C875 /* BaseNavigationController.swift in Sources */,
+				DBB220271F2AA4AF0006C875 /* ImageTableViewCell.swift in Sources */,
+				DBF514451F29C482001DEFA5 /* ProfileModel.swift in Sources */,
+				DBF5143C1F29C079001DEFA5 /* MemberListViewModel.swift in Sources */,
+				DBB220251F2A9B420006C875 /* ProfileViewController.swift in Sources */,
+				DBF5140D1F298B87001DEFA5 /* MemberListViewController.swift in Sources */,
+				DBF514491F2A5D2C001DEFA5 /* NSFetchedResultsController+Extension.swift in Sources */,
+				DBB2201E1F2A60680006C875 /* MemberListLazyLoader.swift in Sources */,
+				DBF5143E1F29C1FE001DEFA5 /* FetchedResultsControllerObserver.swift in Sources */,
+				DBF514391F29B840001DEFA5 /* Profile.swift in Sources */,
 				DBF514131F298B87001DEFA5 /* SlackUserList.xcdatamodeld in Sources */,
+				DBF5142A1F299AD4001DEFA5 /* ManagedObject.swift in Sources */,
+				DBF5142E1F29AB14001DEFA5 /* MOCSyncCoordinator.swift in Sources */,
+				DBF514341F29B789001DEFA5 /* UserListService.swift in Sources */,
+				DBF514371F29B7D1001DEFA5 /* Member.swift in Sources */,
+				DBFE8A2B1F2D726600A7D5BF /* MemberListTableViewCell.swift in Sources */,
+				DBF514321F29B530001DEFA5 /* BaseService.swift in Sources */,
 				DBF5140B1F298B87001DEFA5 /* AppDelegate.swift in Sources */,
+				DBB220291F2AA5BB0006C875 /* DetailsTableViewCell.swift in Sources */,
+				DBF514401F29C321001DEFA5 /* MemberListCellDataSource.swift in Sources */,
+				DBF5142C1F299C46001DEFA5 /* NSManagedObjectContext+Extension.swift in Sources */,
+				DBF514471F29C608001DEFA5 /* KeyCodable.swift in Sources */,
+				DBFE8A2E1F2D783F00A7D5BF /* UIView+Slack.swift in Sources */,
+				DBB220201F2A61710006C875 /* CursorModel.swift in Sources */,
+				DBF514431F29C3B5001DEFA5 /* MemberModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +462,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 86F7Y88BZA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SlackUserList",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SlackUserList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.array.SlackUserList;
@@ -279,6 +480,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 86F7Y88BZA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SlackUserList",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SlackUserList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.array.SlackUserList;
@@ -306,6 +512,7 @@
 				DBF5141E1F298B87001DEFA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

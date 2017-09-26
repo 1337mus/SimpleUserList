@@ -1,0 +1,4 @@
+# carthage update --platform iOS
+
+github "Alamofire/AlamofireImage"
+github "Alamofire/Alamofire" ~> 4.0

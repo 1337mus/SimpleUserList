@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CursorModel" representedClassName=".CursorModel" syncable="YES">
+        <attribute name="latestCursor" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MemberModel" representedClassName=".MemberModel" syncable="YES">
+        <attribute name="memberDeleted" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="memberId" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="teamId" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="thumbnailUrl" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="profileModel" maxCount="1" deletionRule="Cascade" destinationEntity="ProfileModel" inverseName="memberModel" inverseEntity="ProfileModel" syncable="YES"/>
+    </entity>
+    <entity name="ProfileModel" representedClassName=".ProfileModel" syncable="YES">
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="realName" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="memberModel" maxCount="1" deletionRule="Nullify" destinationEntity="MemberModel" inverseName="profileModel" inverseEntity="MemberModel" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CursorModel" positionX="135" positionY="-117" width="128" height="60"/>
+        <element name="MemberModel" positionX="315" positionY="9" width="128" height="135"/>
+        <element name="ProfileModel" positionX="-54" positionY="27" width="128" height="103"/>
+    </elements>
 </model>
